@@ -1,0 +1,42 @@
+.btn-Add {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #f3724f;
+    --bs-btn-border-color: #f3724f;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #f3724f;
+    --bs-btn-hover-border-color: #f3724f;
+}
+.btn-update {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #fdd832;
+    --bs-btn-border-color: #ffc107;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #ffc107;
+    --bs-btn-hover-border-color: #ffc107;
+}
+
+.font {
+    font-family: "Pacifico", cursive;
+
+}
+body {
+    background-color: #f7ecde;
+}
+.btn-delete{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+    font-size: 13px;
+}
+.btn-date{
+    --bs-btn-color: #000000;
+    --bs-btn-bg: #1deb7d;
+    --bs-btn-border-color: #1deb7d;
+    --bs-btn-hover-color: #000000;
+    --bs-btn-hover-bg: #1deb7d;
+    --bs-btn-hover-border-color: #1deb7d;
+    font-size: 13px;
+}

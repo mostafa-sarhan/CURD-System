@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>CURD SYSTEM</title>
+</head>
+<body>
+    <div class="container text-center mt-5" >
+        <h1 class="my-5 font">CRUD SYSTEM</h1>
+
+        <div class="form-floating mt-3">
+            <input type="text" name="" id="productName" placeholder="product Name" class="form-control" >
+            <label for="productName">product Name</label>
+        </div>
+
+        <div class="form-floating mt-3">
+            <input type="text" name="" id="productPrice" placeholder="product price" class="form-control">
+            <label for="productPrice">product price</label>
+        </div>
+
+        <div class="form-floating mt-3">
+            <input list="category" type="text" name="" id="productCategory" placeholder="product price" class="form-control">
+            <label for="productCategory">product Category</label>
+        </div>
+
+        <datalist id="category">
+            <option value="Apple"></option>
+            <option value="Mobile"></option>
+            <option value="screen"></option>
+            <option value="Tablet"></option>
+        </datalist>
+
+        <div class="form-floating mt-3">
+            <textarea id="productDescription" placeholder="" class="form-control" style="height: 100px;"></textarea>
+            <label for="productDescription">product Description</label>
+        </div>
+
+        <div class="mt-3 text-center d-flex gap-2 justify-content-end">
+            <button id="btnAdd" class="btn btn-Add d-block" onclick="addProduct()">Add Product</button>
+            <button id="btn-update" class="btn btn-Add d-none" onclick="updateProduct()">Update Product</button>
+            <button id="btnUpdate" class="btn btn-update " onclick="clearAll()">Clear All</button>
+        </div>
+
+        <table class="table my-4 text-center align-middle">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>price</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                    <th>1</th>
+                    <th>iphone</th>
+                    <th>1200</th>
+                    <th>mobile</th>
+                        <button class="btn btn-date pe-2 btn-sm ">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Update
+                        </button>
+                    <th>
+                        <button class="btn btn-delete pe-2 btn-sm" onclick="deleteElement ()">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Delete
+                        </button>
+                    </th>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
